@@ -273,13 +273,8 @@
       margin-bottom: 0.3rem;
     }
 
-    ul {
-      padding-left: 1.1rem;
-    }
-
-    li {
-      margin-bottom: 0.2rem;
-    }
+    ul { padding-left: 1.1rem; }
+    li { margin-bottom: 0.2rem; }
 
     .split {
       display: grid;
@@ -289,9 +284,7 @@
     }
 
     @media (max-width: 900px) {
-      .split {
-        grid-template-columns: minmax(0, 1fr);
-      }
+      .split { grid-template-columns: minmax(0, 1fr); }
     }
 
     .package-grid {
@@ -340,9 +333,7 @@
       color: var(--muted);
     }
 
-    .contact-section {
-      text-align: left;
-    }
+    .contact-section { text-align: left; }
 
     .contact-grid {
       display: grid;
@@ -351,9 +342,7 @@
     }
 
     @media (max-width: 900px) {
-      .contact-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
+      .contact-grid { grid-template-columns: minmax(0, 1fr); }
     }
 
     .contact-block {
@@ -374,6 +363,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="page">
     <header>
@@ -388,20 +378,23 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#packages">Packages</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="projects.html">Projects</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+
       <!-- HERO -->
       <section class="hero" id="overview">
         <div>
           <div class="hero-pre">Senior Infrastructure & Cloud Consulting</div>
           <h1 class="hero-title">Modern Infrastructure. Senior Expertise. No Full-Time Hire Required.</h1>
           <p class="hero-sub">
-            High-level engineering services specializing in VMware architecture, cloud migrations, infrastructure automation,
+            High-level engineering services specializing in VMware architecture, cloud migrations, automation,
             identity/security integrations, and enterprise modernization — built on 20+ years of hands-on experience.
           </p>
+
           <div class="hero-cta">
             <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
               Schedule a Consultation
@@ -410,6 +403,7 @@
               View Consulting Packages
             </button>
           </div>
+
           <div class="hero-tags">
             <span class="hero-tag">VMware • vCenter • ESXi</span>
             <span class="hero-tag">Azure & AWS Cloud</span>
@@ -426,14 +420,15 @@
           </div>
           <ul class="hero-panel-list">
             <li>Managed 700+ VMs across enterprise vCenter environments</li>
-            <li>Led SD-WAN migrations for 300+ retail sites</li>
-            <li>Architected large-scale DR solutions with SAN replication</li>
+            <li>Led SD-WAN migrations for 300+ sites</li>
+            <li>Architected large-scale DR solutions</li>
           </ul>
           <div class="hero-pill">
             <span>20+ years enterprise IT</span>
             <span>•</span>
-            <span>Hands-on, not just advisory</span>
+            <span>Hands-on engineering</span>
           </div>
+
           <div class="alt-brands" style="margin-top:0.7rem;">
             <span class="alt-brand">Cargill Systems Engineering Group</span>
             <span class="alt-brand">Velocity Infrastructure & Cloud Solutions</span>
@@ -447,26 +442,28 @@
       <section class="section" id="clients">
         <h2>Target Clients</h2>
         <p class="section-subtitle">
-          Designed for organizations that need senior-level infrastructure leadership without the commitment of another full-time hire.
+          Designed for organizations that need senior-level infrastructure leadership without another full-time hire.
         </p>
+
         <div class="grid-2">
           <div class="card">
             <div class="pill-label">Primary (Highest Value)</div>
-            <div class="card-title">High-Impact, High-Growth Environments</div>
+            <div class="card-title">High-Impact Environments</div>
             <ul>
               <li>Mid-market companies (200–5,000 employees)</li>
-              <li>Healthcare clinics and medical groups</li>
-              <li>Retail chains with multi-site operations</li>
-              <li>SaaS companies with technical debt or scaling pains</li>
-              <li>MSPs needing high-tier escalation support</li>
+              <li>Healthcare groups</li>
+              <li>Retail chains • multi-site operations</li>
+              <li>SaaS companies with scaling needs</li>
+              <li>MSPs needing senior escalation</li>
             </ul>
           </div>
+
           <div class="card">
             <div class="pill-label">Secondary</div>
-            <div class="card-title">Growing Teams & Legacy Modernization</div>
+            <div class="card-title">Growing Teams & Modernization</div>
             <ul>
               <li>Startups needing architecture guidance</li>
-              <li>Small businesses with legacy systems</li>
+              <li>Small businesses with legacy environments</li>
               <li>Organizations needing part-time senior engineering</li>
             </ul>
           </div>
@@ -476,26 +473,27 @@
       <!-- SERVICES -->
       <section class="section" id="services">
         <h2>Core Services</h2>
-        <p class="section-subtitle">End-to-end infrastructure, cloud, and automation services focused on stability, security, and scalability.</p>
+        <p class="section-subtitle">Full-stack infrastructure, cloud, and automation expertise.</p>
 
         <div class="split">
           <div class="card">
             <div class="card-title">1. Cloud Engineering & Migration</div>
             <ul>
-              <li>Azure / AWS migrations and greenfield deployments</li>
-              <li>Azure governance, identity, VNet and subnet design</li>
-              <li>Hybrid cloud integrations with on-prem environments</li>
-              <li>O365 / Exchange / SharePoint migrations</li>
+              <li>Azure / AWS migrations</li>
+              <li>Identity, governance, networking</li>
+              <li>Hybrid cloud integrations</li>
+              <li>O365 / Exchange migrations</li>
             </ul>
           </div>
+
           <div class="card">
             <div class="card-title">2. VMware Engineering</div>
             <ul>
-              <li>vCenter upgrades (6.x → 7/8) and consolidation</li>
-              <li>ESXi host remediation and standardization</li>
-              <li>Storage migrations (NFS / iSCSI / SAN)</li>
-              <li>SRM & DR failover design and testing</li>
-              <li>Retail/branch virtualization deployments at scale</li>
+              <li>vCenter upgrades to 7/8</li>
+              <li>ESXi remediation</li>
+              <li>Storage migrations</li>
+              <li>SRM & DR architecture</li>
+              <li>Large-scale retail deployments</li>
             </ul>
           </div>
         </div>
@@ -504,19 +502,20 @@
           <div class="card">
             <div class="card-title">3. DevOps & Automation</div>
             <ul>
-              <li>Terraform IaC builds for Azure, AWS, and VMware</li>
-              <li>Azure DevOps Repos & Pipelines, YAML-based CI/CD</li>
-              <li>CI/CD for enterprise applications</li>
-              <li>PowerShell & Python automation for operations</li>
+              <li>Terraform (Azure / AWS / VMware)</li>
+              <li>Azure DevOps Repos & Pipelines</li>
+              <li>CI/CD automation</li>
+              <li>PowerShell & Python scripting</li>
             </ul>
           </div>
+
           <div class="card">
             <div class="card-title">4. Identity & Security</div>
             <ul>
-              <li>Okta integrations and SSO/SCIM deployments</li>
-              <li>AD / Azure AD restructuring and clean-up</li>
-              <li>Keyfactor + Azure Key Vault automation</li>
-              <li>Secret Server deployment and hardening (PAM)</li>
+              <li>Okta SSO/SCIM</li>
+              <li>AD / Azure AD cleanup & restructure</li>
+              <li>Keyfactor + Key Vault automation</li>
+              <li>Secret Server (PAM) deployments</li>
             </ul>
           </div>
         </div>
@@ -525,19 +524,20 @@
           <div class="card">
             <div class="card-title">5. Network & SD-WAN</div>
             <ul>
-              <li>VMware Velocloud SD-WAN deployments</li>
-              <li>Cisco Meraki migrations and redesign</li>
-              <li>Cisco ASA / Firepower / Palo Alto firewall design</li>
-              <li>Firewall, VPN, and segmentation architecture</li>
+              <li>VMware Velocloud SD-WAN</li>
+              <li>Cisco Meraki migrations</li>
+              <li>Firewalls: ASA / Firepower / Palo Alto</li>
+              <li>VPN & segmentation architecture</li>
             </ul>
           </div>
+
           <div class="card">
             <div class="card-title">6. DR & Business Continuity</div>
             <ul>
-              <li>DR site buildouts and architecture</li>
-              <li>SAN replication strategies and tuning</li>
-              <li>Backup modernization & integration</li>
-              <li>RTO/RPO design and DR runbooks</li>
+              <li>DR site buildouts</li>
+              <li>SAN replication architecture</li>
+              <li>Backup modernization</li>
+              <li>RTO/RPO planning</li>
             </ul>
           </div>
         </div>
@@ -546,143 +546,143 @@
       <!-- ADVANTAGES -->
       <section class="section">
         <h2>Your Advantage with Cargill</h2>
-        <p class="section-subtitle">What makes this consulting practice different from a generic “IT services” shop.</p>
+        <p class="section-subtitle">Beyond generic “IT services”—true enterprise engineering.</p>
+
         <div class="grid-2">
           <div class="card">
             <div class="card-title">Rare Skill Blend</div>
             <ul>
-              <li>VMware + Cloud + DevOps + Identity + Networking in one seat</li>
-              <li>Deep experience across on-prem, hybrid, and cloud-native environments</li>
+              <li>VMware + Cloud + DevOps + Identity + Networking</li>
+              <li>Deep multi-environment experience</li>
             </ul>
           </div>
+
           <div class="card">
-            <div class="card-title">Proven Enterprise Impact</div>
+            <div class="card-title">Enterprise-Proven</div>
             <ul>
-              <li>Enterprise-scale migrations and modernizations delivered successfully</li>
-              <li>Extensive MSP experience — ideal for subcontracted senior escalation</li>
+              <li>Major migrations delivered successfully</li>
+              <li>Ideal for MSP subcontracting</li>
             </ul>
           </div>
+
           <div class="card">
-            <div class="card-title">Automation-First Approach</div>
+            <div class="card-title">Automation-First</div>
             <ul>
-              <li>Automation for systems others struggle to manage manually</li>
-              <li>Infrastructure as Code and CI/CD by default, not as an afterthought</li>
+              <li>IaC and CI/CD by default</li>
+              <li>Automations others can’t build</li>
             </ul>
           </div>
+
           <div class="card">
-            <div class="card-title">Leadership & Communication</div>
+            <div class="card-title">Leadership & Clarity</div>
             <ul>
-              <li>Hands-on engineering plus executive-level communication</li>
-              <li>Led teams and projects at Kendra Scott, SAM, CM Management, AFP</li>
-              <li>Strong documentation and process-building discipline</li>
+              <li>Executive-ready communication</li>
+              <li>Teams led at major companies</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- PACKAGES & PRICING -->
+      <!-- PACKAGES -->
       <section class="section" id="packages">
         <h2>Consulting Packages & Pricing</h2>
         <p class="section-subtitle">
-          Hourly consulting available at $110–$150/hr (standard) and $150–$200/hr (specialized VMware / cloud automation),
-          but structured packages typically deliver the best value and outcomes.
+          Hourly: $110–$150/hr (standard) • $150–$200/hr (specialized VMware & automation)
         </p>
 
         <div class="package-grid">
+
           <div class="package-card">
-            <div class="package-name">⭐ Package 1 — VMware Health Check & Optimization</div>
-            <div class="package-price">$1,500 (remote) • $2,500 (on-site)</div>
+            <div class="package-name">⭐ VMware Health Check</div>
+            <div class="package-price">$1,500 remote • $2,500 on-site</div>
             <ul class="package-list">
-              <li>vCenter architecture review</li>
-              <li>ESXi host compliance review</li>
-              <li>Storage configuration evaluation</li>
-              <li>vSwitch / vDS configuration check</li>
-              <li>VM performance analysis</li>
-              <li>Licensing optimization & full remediation plan</li>
+              <li>vCenter review</li>
+              <li>Host compliance</li>
+              <li>Storage evaluation</li>
+              <li>vSwitch/vDS check</li>
+              <li>Performance analysis</li>
+              <li>Remediation plan</li>
             </ul>
           </div>
 
           <div class="package-card">
-            <div class="package-name">⭐ Package 2 — Azure Landing Zone Build</div>
+            <div class="package-name">⭐ Azure Landing Zone</div>
             <div class="package-price">$3,500 – $8,000</div>
             <ul class="package-list">
-              <li>Governance and subscription structure</li>
-              <li>Identity (AD / Entra) integration</li>
-              <li>Networking design (VNets, subnets, firewalls)</li>
-              <li>Budgets, policies, and guardrails</li>
-              <li>Logging, monitoring, & secure baseline templates</li>
+              <li>Governance</li>
+              <li>Identity integration</li>
+              <li>Networking</li>
+              <li>Budgets & guardrails</li>
+              <li>Monitoring & baselines</li>
             </ul>
           </div>
 
           <div class="package-card">
-            <div class="package-name">⭐ Package 3 — Terraform IaC Buildout</div>
-            <div class="package-price">$2,500 – $12,000 (scope-based)</div>
+            <div class="package-name">⭐ Terraform IaC Buildout</div>
+            <div class="package-price">$2,500 – $12,000</div>
             <ul class="package-list">
-              <li>Repo structure and environments (dev/test/prod)</li>
+              <li>Repo structure</li>
               <li>Azure DevOps pipelines</li>
-              <li>Remote state management</li>
-              <li>Documentation and hand-off</li>
-              <li>Secrets integration with Azure Key Vault</li>
+              <li>Remote state</li>
+              <li>Documentation</li>
+              <li>Key Vault integration</li>
             </ul>
           </div>
 
           <div class="package-card">
-            <div class="package-name">⭐ Package 4 — Keyfactor + Azure Key Vault Automation</div>
+            <div class="package-name">⭐ Keyfactor + Key Vault Automation</div>
             <div class="package-price">$3,000 – $10,000</div>
             <ul class="package-list">
-              <li>API integration and workflow mapping</li>
-              <li>Certificate enrollment & renewal automation</li>
-              <li>Secrets synchronization</li>
-              <li>Policy enforcement & reporting dashboards</li>
+              <li>API workflow integration</li>
+              <li>Certificate automation</li>
+              <li>Secrets sync</li>
+              <li>Policy enforcement</li>
             </ul>
           </div>
 
           <div class="package-card">
-            <div class="package-name">⭐ Package 5 — Secret Server Deployment + PAM Automation</div>
+            <div class="package-name">⭐ Secret Server + PAM Automation</div>
             <div class="package-price">$4,000 – $10,000</div>
             <ul class="package-list">
-              <li>Install & configure Secret Server</li>
-              <li>Folder structure & RBAC design</li>
-              <li>Credential rotation policies</li>
-              <li>Service account lifecycle automation</li>
-              <li>Team scripting and integration</li>
+              <li>Install & configure</li>
+              <li>RBAC & folder structure</li>
+              <li>Credential rotation</li>
+              <li>Service account automation</li>
             </ul>
           </div>
 
           <div class="package-card">
-            <div class="package-name">⭐ Package 6 — Full Cloud Migration Package</div>
+            <div class="package-name">⭐ Cloud Migration Package</div>
             <div class="package-price">$8,000 – $40,000</div>
             <ul class="package-list">
-              <li>Current-state assessment</li>
-              <li>Cloud design (networking, identity, governance)</li>
-              <li>Lift-and-shift planning and execution</li>
-              <li>Cutover support and post-migration tuning</li>
-              <li>Full documentation and knowledge transfer</li>
+              <li>Assessment</li>
+              <li>Design & planning</li>
+              <li>Migration & cutover</li>
+              <li>Documentation</li>
             </ul>
           </div>
 
           <div class="package-card">
-            <div class="package-name">⭐ Package 7 — MSP Senior Escalation Contractor</div>
-            <div class="package-price">$2,500/month (10 hours) • $5,000/month (20 hours)</div>
+            <div class="package-name">⭐ MSP Senior Escalation Retainer</div>
+            <div class="package-price">$2,500/mo (10h) • $5,000/mo (20h)</div>
             <ul class="package-list">
-              <li>High-tier VMware / cloud escalation support</li>
-              <li>Architecture reviews and remediation plans</li>
-              <li>Complex incident resolution</li>
-              <li>Ideal for MSPs needing senior “Tier 4” expertise</li>
+              <li>High-tier VMware/cloud support</li>
+              <li>Architecture review</li>
+              <li>Incident resolution</li>
             </ul>
           </div>
 
           <div class="package-card">
-            <div class="package-name">⭐ Package 8 — SD-WAN (Velocloud / Meraki) Deployment</div>
+            <div class="package-name">⭐ SD-WAN Deployment (Velocloud/Meraki)</div>
             <div class="package-price">$5,000 – $30,000</div>
             <ul class="package-list">
-              <li>Site templates and configuration standards</li>
-              <li>Firewall and security rulesets</li>
-              <li>Monitoring and alerting setup</li>
-              <li>Deployment automation and store/branch cutovers</li>
-              <li>Experience with 300+ site rollouts</li>
+              <li>Site templates</li>
+              <li>Firewall rulesets</li>
+              <li>Monitoring & alerts</li>
+              <li>Deployment automation</li>
             </ul>
           </div>
+
         </div>
       </section>
 
@@ -690,45 +690,97 @@
       <section class="section contact-section" id="contact">
         <h2>Contact & Next Steps</h2>
         <p class="section-subtitle">
-          Ready to modernize your infrastructure, reduce risk, and unlock automation? Let’s scope a project or start with a targeted health check.
+          Ready to modernize your infrastructure? Send a message and you’ll receive a reply within 1–2 business days.
         </p>
 
         <div class="contact-grid">
+
+          <!-- LEFT -->
           <div class="contact-block">
             <h3 style="font-size:1rem;margin-bottom:0.4rem;">Direct Contact</h3>
             <p>
               <strong>Email:</strong> <a href="mailto:jeremiahcargill@gmail.com">jeremiahcargill@gmail.com</a><br />
               <strong>Phone:</strong> <a href="tel:15126760060">512-676-0060</a><br />
-              <strong>Location:</strong> Central Texas (Austin area) • Remote U.S. clients welcome
+              <strong>Location:</strong> Central Texas • Remote U.S. clients welcome
             </p>
+
             <p style="margin-top:0.7rem;">
-              Send a brief description of your environment and goals, and you’ll receive a recommended engagement model (health check, project, or retainer) within 1–2 business days.
+              Send details about your environment and project. I’ll provide a recommended approach (health check, project, or retainer).
             </p>
-          </div>
-          <div class="contact-block">
-            <h3 style="font-size:1rem;margin-bottom:0.4rem;">Suggested First Engagements</h3>
+
+            <h3 style="font-size:1rem;margin-top:1.2rem;margin-bottom:0.4rem;">Suggested First Engagements</h3>
             <ul>
-              <li>VMware Health Check & Optimization</li>
-              <li>Azure or AWS Environment Review</li>
-              <li>Terraform & Automation Readiness Assessment</li>
-              <li>DR / Business Continuity Assessment</li>
+              <li>VMware Health Check</li>
+              <li>Azure/AWS Review</li>
+              <li>Terraform Automation Assessment</li>
+              <li>DR / Business Continuity Review</li>
             </ul>
-            <p style="margin-top:0.6rem;">
-              These engagements are designed to produce quick wins, clear visibility, and a concrete roadmap without long-term commitment.
-            </p>
           </div>
+
+          <!-- RIGHT — CONTACT FORM -->
+          <div class="contact-block">
+            <h3 style="font-size:1rem;margin-bottom:0.4rem;">Send a Message</h3>
+
+            <form action="https://formspree.io/f/xeonvoql" method="POST" style="display:flex;flex-direction:column;gap:0.75rem;">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+                style="padding:0.6rem;border-radius:0.4rem;border:1px solid var(--border);background:var(--card-bg);color:var(--text);"
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                style="padding:0.6rem;border-radius:0.4rem;border:1px solid var(--border);background:var(--card-bg);color:var(--text);"
+              />
+
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                style="padding:0.6rem;border-radius:0.4rem;border:1px solid var(--border);background:var(--card-bg);color:var(--text);"
+              />
+
+              <textarea
+                name="message"
+                placeholder="Describe your environment, project, or issue…"
+                rows="5"
+                required
+                style="padding:0.6rem;border-radius:0.4rem;border:1px solid var(--border);background:var(--card-bg);color:var(--text);"
+              ></textarea>
+
+              <!-- Anti-spam honeypot -->
+              <input type="text" name="_gotcha" style="display:none" />
+
+              <button type="submit" class="btn-primary" style="width:max-content;">
+                Send Message
+              </button>
+
+              <p style="font-size:0.75rem;color:var(--muted);margin-top:0.3rem;">
+                Your message is securely delivered via Formspree.
+              </p>
+            </form>
+          </div>
+
         </div>
       </section>
+
     </main>
 
     <footer>
       <div>© <span id="year"></span> Cargill Cloud & Infrastructure Consulting. All rights reserved.</div>
-      <div>Operating also as: Cargill Systems Engineering Group • Velocity Infrastructure & Cloud Solutions • Central Texas Cloud Engineering • Terraform & VMware Solutions Group.</div>
+      <div>Also operating as: Cargill Systems Engineering Group • Velocity Infrastructure & Cloud Solutions • Central Texas Cloud Engineering • Terraform & VMware Solutions Group.</div>
     </footer>
+
   </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
